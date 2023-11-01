@@ -7,13 +7,9 @@ This tutorial will cover setting up a base project with Django, Tailwind and MyS
 
 ### Prerequisites
 Here's what needs to be installed before we are able to continue:
-- Python
+- Python & Pip
 - NodeJS
-- Apache
-- mod_wsgi
-- MySQL (PostgreSQL, MariaDB, Oracle, SQLite)
-- Git
-- pip
+- MySQL (PostgreSQL, MariaDB, Oracle, SQLite) (optional)
 
 ### Setup
 This workflow requires a virtual environment to handle dependencies properly. First, we'll enter a new virtual environment and then install everything we need. Enter the following into the terminal at this file's base directory.

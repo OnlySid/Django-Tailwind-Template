@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
+## [v0.0.3] - 01/11/2023
+Altering bash script formatting and simplifying requirements in Readme.
+
+&nbsp;
 ## [v0.0.2] - 01/11/2023
 Adding run server to pip scripts and adding a changelog.
 
