@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
+## [v1.0.0] - 03/11/2023
+Fully tested, added launch page with documentation guidance and attributions. Happy coding!
+
+&nbsp;
 ## [v0.1.0] - 03/11/2023
 Adding instructions for using Tailwind, adding a defult configuration for Tailwind and creating a style.css for CSS overrides. Ready for testing!
 

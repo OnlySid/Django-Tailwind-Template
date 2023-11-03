@@ -25,7 +25,27 @@ This will take you through a setup process.
 ```
 sh setup.sh
 ```
-This completes the Tailwind and Django setup.
+This completes the Tailwind and Django setup. Next, we will look at how to use Tailwind and how to configure MySQL, but if you already know this, then you're done!
+
+
+## Using Tailwind
+
+Tailwind is currently set up to look at any html file within the templates directory. You can add any other files you may wish to watch in the tailwind.config.js file.
+
+This config file contains some base settings to handle large screen-size responsiveness and provides a default colour sheme.
+
+To start watching for changes, run:
+```
+pipenv run watch
+```
+Adding tw classes to elements and saving the file will now generate the CSS in static/src/output.css.
+
+Within the same src directory, we have a 'style.css' file which is also being watched by default. Using '@apply'-style Tailwind CSS overrides here works and also generates changes to output.css.
+
+To bundle and minify output.css, ready for production, run:
+```
+pipenv run build
+```
 
 
 ## Configuring for MySQL
@@ -105,26 +125,6 @@ Then, pass it to the render by returning the following:
 return render(request, 'page.html', {'customers': customers})
 ```
 Now that you have a model, you can create views, forms and much more using Django fairly easily! For more information, [follow the steps provided here](https://docs.djangoproject.com/en/4.2/topics/forms/modelforms/).
-
-
-## Using Tailwind
-
-Tailwind is currently set up to look at any html file within the templates directory. You can add any other files you may wish to watch in the tailwind.config.js file.
-
-This config file contains some base settings to handle large screen-size responsiveness and provides a default colour sheme.
-
-To start watching for changes, run:
-```
-pipenv run watch
-```
-Adding tw classes to elements and saving the file will now generate the CSS in static/src/output.css.
-
-Within the same src directory, we have a 'style.css' file which is also being watched by default. Using '@apply'-style Tailwind CSS overrides here works and also generates changes to output.css.
-
-To bundle and minify output.css, ready for production, run:
-```
-pipenv run build
-```
 
 
 ## Deployment

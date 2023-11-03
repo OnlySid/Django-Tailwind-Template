@@ -12,8 +12,8 @@ nose = "*"
 
 [scripts]
 watch = "npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch"
-build = "npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css"
-server = "python manage.py run server"
+build = "npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --minify"
+server = "python manage.py runserver"
 migrate = "python manage.py migrate"
 makemigrations = "python manage.py makemigrations"
 
