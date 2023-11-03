@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
+## [v0.1.0] - 03/11/2023
+Adding instructions for using Tailwind, adding a defult configuration for Tailwind and creating a style.css for CSS overrides. Ready for testing!
+
+&nbsp;
 ## [v0.0.4] - 03/11/2023
 Adding model scripts to pipenv config and updating Readme to include information about MySQL integration.
 

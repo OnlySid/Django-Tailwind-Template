@@ -76,7 +76,7 @@ class Customer(models.Model):
     email = models.EmailField(max_length = 254)
     phone = models.CharField(max_length = 15)
 
-    # Identify user when object is printed
+    # Identify customer by name when object created via model is printed
     def __str__(self):
         return(f"{self.first_name} {self.last_name}")
 ```
@@ -107,6 +107,26 @@ return render(request, 'page.html', {'customers': customers})
 Now that you have a model, you can create views, forms and much more using Django fairly easily! For more information, [follow the steps provided here](https://docs.djangoproject.com/en/4.2/topics/forms/modelforms/).
 
 
+## Using Tailwind
+
+Tailwind is currently set up to look at any html file within the templates directory. You can add any other files you may wish to watch in the tailwind.config.js file.
+
+This config file contains some base settings to handle large screen-size responsiveness and provides a default colour sheme.
+
+To start watching for changes, run:
+```
+pipenv run watch
+```
+Adding tw classes to elements and saving the file will now generate the CSS in static/src/output.css.
+
+Within the same src directory, we have a 'style.css' file which is also being watched by default. Using '@apply'-style Tailwind CSS overrides here works and also generates changes to output.css.
+
+To bundle and minify output.css, ready for production, run:
+```
+pipenv run build
+```
+
+
 ## Deployment
 
 ### Server Requirements
@@ -114,4 +134,4 @@ Your server will need the following:
 - Apache
 - NGINX (To set up a reverse proxy)
 
-Further instructions coming soon.
+Further instructions for deployment coming soon.
