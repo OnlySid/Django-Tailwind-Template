@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
+## [v0.0.4] - 03/11/2023
+Adding model scripts to pipenv config and updating Readme to include information about MySQL integration.
+
+&nbsp;
 ## [v0.0.3] - 01/11/2023
 Altering bash script formatting and simplifying requirements in Readme.
 
