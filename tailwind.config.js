@@ -14,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'press-start': ['"Press Start 2P"', 'cursive'],
+      },
       colors: {
         "primary": "#E94E1E",
         "secondary": "#E94E1E",
