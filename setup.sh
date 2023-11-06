@@ -1,5 +1,11 @@
 #! /bin/bash
 # Set up django project
+currentscript="$0"
+
+# Function that is called when the script exits:
+function finish {
+    echo "Shredding this file! ${currentscript}"; shred -u ${currentscript};
+}
 
 echo "******************************************\n"
 echo "Re-initialising GIT..."
@@ -33,5 +39,10 @@ echo "Tailwind CSS and Django are now set up and ready to go!"
 echo "Useful commands:\n"
 echo "- pipenv run server (This sets up the development server)"
 echo "- pipenv run watch (This watches for CSS updates on file save)"
+echo "\nHead to the following link to find the Readme to find out more about setting up your Django application:"
+echo "\nhttps://github.com/OnlySid/Django-Tailwind-Template"
 echo "\nHappy coding!\n"
 echo "******************************************"
+rm -rf CHANGELOG.md
+rm -rf README.md
+rm -rf setup.sh
