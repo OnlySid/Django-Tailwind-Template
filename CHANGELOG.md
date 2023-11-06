@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
+## [v1.0.2] - 06/11/2023
+Updating Changelog for the previous commit.
+
+&nbsp;
+## [v1.0.1] - 06/11/2023
+Adding the startup font for the initial welcome page.
+
+&nbsp;
 ## [v1.0.0] - 03/11/2023
 Fully tested, added launch page with documentation guidance and attributions. Happy coding!
 
