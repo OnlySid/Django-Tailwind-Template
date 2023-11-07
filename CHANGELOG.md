@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
+## [v1.1.1] - 06/11/2023
+Adding common issues & fixes to the Readme.
+
+&nbsp;
 ## [v1.1.0] - 06/11/2023
 Destroy CHANGELOG, README and setup.sh upon completion of the startup script.
 

@@ -135,3 +135,37 @@ Your server will need the following:
 - NGINX (To set up a reverse proxy)
 
 Further instructions for deployment coming soon.
+
+
+## Tips and Common Issues
+
+You may run into a few issues with this deployment. I've done my best to outline all the potential problems one could run into with easy fixes/workarounds in the following section.
+
+### First point of debugging
+
+The way this template is set up, everything is run in a pipenv (virtual environment). The first step towards successful debugging of any issues is ensuring that you are in a shell of the virtual environment within all terminals you may be working from. To enter such a shell, run the following command:
+```
+pipenv shell
+```
+
+
+### Django interpreter shows "Import X could not be resolved from source" (Warning)
+
+This is because your code editor may be referring to an installation of python on your machine as the root directory for any python imports. The project, however, uses the installation of Django and Python within your virtual environment as the source of all python imports. Simply changing the source in your interpreter to match the source of the project will stop these warnings from showing up.
+
+It should be noted that the project will continue to work despite these warnings, it's just that your interpreter (in my case, VS Code) will not be using the correct source and may not be able to autofill things for you properly.
+
+To resolve this in VS Code:
+- Open up the Commant Palette (View -> Command Palette or cmd+shift+p on Mac).
+- Type "Python: Select Interpretor".
+- Choose the interpretor associated with your virtual environment.
+
+
+### VS Code does not allow HTML shortcuts with the Django interpretor
+
+I have found that adding the following setting to the settings.json file fixes this issue:
+```
+"emmet.includeLanguages": {
+    "django-html": "html",
+}
+```

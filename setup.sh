@@ -23,10 +23,8 @@ echo "Now please follow these instructions:\n"
 echo "Go to ./$projectname/settings.py and add the following to the TEMPLATES array:"
 echo "'DIRS': [BASE_DIR / 'templates'],\n"
 read -n 1 -r -s -p $'(Press any key to continue)'
-echo "\n\nThen in the same file, add 'compressor' to the array of INSTALLED_APPS."
-read -n 1 -r -s -p $'(Press any key to continue)'
-echo "\n\nAlso make sure the following compressor settings are added:"
-echo "COMPRESS_ROOT = BASE_DIR / 'static'\nCOMPRESS_ENABLED = True\nSTATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)"
+echo "\n\nAlso make sure the following settings are added:"
+echo "STATICFILES_DIRS = [BASE_DIR / 'static',]"
 read -n 1 -r -s -p $'(Press any key to continue)'
 echo "\n\nInstalling dependencies..."
 rm ./$projectname/urls.py

@@ -1,6 +1,8 @@
 module.exports = {
   content: [
-    './templates/**/*.html',
+    './templates/*.html',
+    /* Any additional Django Apps */
+    './*/templates/**/*.html',
     './static/src/style.css'
   ],
   theme: {
