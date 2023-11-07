@@ -7,8 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 &nbsp;
 <!--- Start of changelog -->
-## [v1.1.1] - 06/11/2023
-Adding common issues & fixes to the Readme.
+## [v1.2.1] - 07/11/2023
+Changelog update... I really need to remember to commit these!
+
+&nbsp;
+## [v1.2.0] - 07/11/2023
+Fixing tailwind default config settings to include any apps created with Django by default, removing compressor in favour of Tailwind's build command and updating README with common issues.
 
 &nbsp;
 ## [v1.1.0] - 06/11/2023
