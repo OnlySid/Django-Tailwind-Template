@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         'press-start': ['"Press Start 2P"', 'cursive'],
       },
+      transitionDuration: {
+        DEFAULT: "500ms",
+      },
       colors: {
         "primary": "#E94E1E",
         "secondary": "#E94E1E",
@@ -28,14 +31,14 @@ module.exports = {
       },
     },
     screens: {
-      xs: "480px",
-      sm: "600px",
-      md: "782px",
-      lg: "960px",
-      xl: "1280px",
-      "2xl": "1440px",
-      "3xl": "1680px",
-      "4xl": "1920px",
+      xs: "480px", // ^ Small Mobile
+      sm: "600px", // ^ Mobile
+      md: "782px", // ^ Large Mobile / Small Tablet (Full mobile menu)
+      lg: "960px", // ^ Tablet (Partial mobile menu should probably be implemented here)
+      xl: "1280px", // ^ Small Laptop
+      "2xl": "1440px", // ^ Laptop
+      "3xl": "1680px", // ^ Desktop / Large Laptop
+      "4xl": "1920px", // ^ Desktop
     },
   },
   plugins: [],

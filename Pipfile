@@ -15,6 +15,3 @@ build = "npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --
 server = "python manage.py runserver"
 migrate = "python manage.py migrate"
 makemigrations = "python manage.py makemigrations"
-
-[requires]
-python_version = "3.12"
