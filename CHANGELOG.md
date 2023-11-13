@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 <!--- Start of changelog -->
 
+## [v2.1.0] - 13/11/2023
+
+Added context processors as most sites will need app info associated with it.
+
+&nbsp;
+
 ## [v2.0.1] - 13/11/2023
 
 Adding slightly updated readme.md.

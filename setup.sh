@@ -90,6 +90,10 @@ awk -v repl="$replacement_text" '
 echo >> "$settings_path"
 echo "STATICFILES_DIRS = [BASE_DIR / 'static']" >> "$settings_path"
 
+# Add context processors
+echo >> "$settings_path"
+echo "TEMPLATES[0]['OPTIONS']['context_processors'].append('utils.context_processors.app_info',)" >> "$settings_path"
+
 # m) Move back to the script directory
 cd "$script_dir"
 
