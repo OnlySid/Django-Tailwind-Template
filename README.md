@@ -16,7 +16,7 @@ Here's what needs to be installed before we are able to continue:
 
 ### Setup
 
-Simply run the following bash script!
+Simply run the following bash script and follow any instructions!
 
 ```
 sh setup.sh

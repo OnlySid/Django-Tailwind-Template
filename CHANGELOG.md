@@ -8,9 +8,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 <!--- Start of changelog -->
 
-## [v1.2.2] - 13/11/2023
+## [v2.0.1] - 13/11/2023
 
-Updating the setup.sh to handle everything (including updating files created by Django).
+Adding slightly updated readme.md.
+
+&nbsp;
+
+## [v2.0.0] - 13/11/2023
+
+Updating the setup.sh to handle everything (including updating files created by Django). Pipfile no longer requires the latest version of python and Tailwind config has been updated with some extra default styles.
 
 &nbsp;
 
